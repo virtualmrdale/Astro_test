@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 const pageTitle = "Home";
@@ -13,14 +15,19 @@ const pageTitle = "Home";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+		<Header />
 
 		<h1>{pageTitle}</h1>
 		<h1>Welcome to my site</h1>
 		<h2>(hi Ben)</h2>
 
-		<p>Just testing the pipeline now my repo is private</p>
+		<p>What else can I write here? ¯\_(ツ)_/¯</p>
+		
+		<Footer />
+
+		<script>
+			import "../scripts/menu.js";
+		</script>
+		
 	</body>
 </html>
